@@ -5,8 +5,8 @@ In the DNN-Initialised CFD method, the flow field predicted by the DNN is used t
 
 First, aerofoil coordinates are used to generate the SDF array, which, along with flow conditions, is fed into the DNN model to predict the aerofoil's flow field. The field is then denormalised using the original global minimum and maximum values of the flow field variables from the training dataset. This denormalised flow field is mapped onto the mesh around the aerofoil to generate the initialisation file. Values are assigned by nearest point interpolation, with non-interpolated points on the edges filled accordingly, and any remaining points are assigned a fill value of 1. Finally, the file is used in the FLITE2D CFD solver to compute the final aerofoil flow field.  
 
-The SDF generator and DNN UI are available in repository titled "DNN".  
-Link: https://github.com/Asif-MushtaqAA/DNN  
+The SDF generator and DNN UI are available in repository titled "Deep-Neural-Network".  
+Link: https://github.com/Asif-MushtaqAA/Deep-Neural-Network 
 
 FLITE2DonPY is available in repository titled "FLITE2D-on-Py".  
 Link: https://github.com/Asif-MushtaqAA/FLITE2D-on-Py  
